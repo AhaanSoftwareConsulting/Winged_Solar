@@ -55,7 +55,7 @@ export default function Header() {
     </div>
 
     {/* Logo */}
-    <div className="absolute left-1/2 -translate-x-1/3 top-1/2 -translate-y-1/2">
+    <div className="absolute left-1/2 -translate-x-1/3 top-1/2 -translate-y-1/2 animate-float">
       <div className="h-40 w-40 rounded-full bg-white/5 backdrop-blur-3xl flex items-center justify-center">
         <img
           src={logo}

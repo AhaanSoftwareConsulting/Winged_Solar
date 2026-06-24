@@ -24,7 +24,7 @@ export default function Factory() {
     <div className="bg-[#F6F6F6]">
         <div className="max-w-[1440px] mx-auto relative px-4  md:px-6 lg:px-12 xl:px-[60px] py-[90px]">
         <div className="relative justify-center items-center ">
-            <h1 className="text-xl md:text-3xl lg:text-4xl text-[#0B2744] leading-snug text-center font-heading">
+            <h1 className="text-xl md:text-3xl lg:text-4xl text-[#0B2744] leading-snug text-center font-heading ">
              Factory-built solar infrastructure. <br className="hidden lg:block"/>Deployed like equipment.
             </h1>
             <p className="text-[#1a1f24] leading-snug text-xs lg:text-base text-center mt-4 ">
