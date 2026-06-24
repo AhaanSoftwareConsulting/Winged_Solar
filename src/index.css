@@ -15,3 +15,77 @@ body {
 .font-heading {
   font-family: 'Eurostile_Extd_Black', sans-serif;
 }
+
+@keyframes revealText {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-reveal {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: revealText 2s ease forwards;
+}
+
+.animate-delay {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: revealText 2s ease forwards;
+}
+
+/* glowing moving border */
+.border-flow::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    120deg,
+    transparent,
+     rgba(192, 192, 192, 0.9),
+    transparent
+  );
+  animation: borderMove 3s linear infinite;
+  z-index: 0;
+}
+
+/* keep content above */
+
+
+.border-flow span,
+.border-flow {
+  position: relative;
+  z-index: 2;
+}
+
+/* animation */
+@keyframes borderMove {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

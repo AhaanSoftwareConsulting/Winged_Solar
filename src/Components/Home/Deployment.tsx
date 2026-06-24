@@ -6,16 +6,16 @@ import sparrow from "../../assets/sparrow.png";
 export default function Features() {
   return (
     <div className="max-w-[1440px] mx-auto relative">
-        <div className="relative px-4  md:px-6 lg:px-12 xl:px-[60px] py-[90px]">
+        <div className="relative px-4  md:px-6 lg:px-10 xl:px-[60px] py-16 xl:py-[90px]">
         <div className="relative justify-center items-center ">
-            <h1 className="text-3xl md:text-4xl text-[#0B2744] leading-snug text-center font-heading">
-             Built for Every <br/> Deployment Scenario</h1>
+            <h1 className="text-2xl lg:text-4xl text-[#0B2744] leading-snug text-center font-heading">
+             Built for Every <br className="hidden sm:block"/> Deployment Scenario</h1>
         </div>
 
           
 
           {/* Bottom Features */}
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mt-5 ">
+          <div className="grid sm:grid-cols-3 gap-2 xl:gap-6 mt-5 ">
             <BottomCard
               icon={eagle}
               title="Eagle"
@@ -35,7 +35,7 @@ export default function Features() {
             />
           </div>
           <div className="flex justify-center mt-10">
-  <button className="bg-[#F5A623] text-black font-semibold rounded-full px-7 py-5 cursor-pointer">
+  <button className="bg-[#F5A623] text-black font-semibold rounded-full px-7 py-3 xl:py-5 cursor-pointer hover:bg-transparent hover:border hover:border-[#F5A623] hover:text-[#F5A623]">
     View All Products
   </button>
 </div>
@@ -56,7 +56,7 @@ function BottomCard({
   description: string;
 }) {
   return (
-    <div className=" border border-[#24A0D580] rounded-[20px] p-5 flex flex-col items-start gap-5">
+    <div className=" border border-[#24A0D580] rounded-[20px] p-3 xl:p-5 flex flex-col items-start gap-5">
       <div className=" items-center justify-start text-white rounded-[20px]">
         <img
     src={icon}
@@ -65,16 +65,16 @@ function BottomCard({
   />
       </div>
 
-      <h4 className="text-[#003374] text-3xl font-heading">
+      <p className="text-[#003374] text-xl xl:text-3xl font-heading">
         {title}
         <sup className="relative -top-4 text-[10px]">
     TM
   </sup>
-      </h4>
-      <p className="text-[#0F172A] text-base">
+      </p>
+      <p className="text-[#0F172A] text-xs xl:text-base">
         {description}
       </p>
-      <button className="border border-[#0F172A]  text-[#0F172A] text-base font-semibold rounded-full px-7 py-3 cursor-pointer">
+      <button className="border border-[#0F172A]  text-[#0F172A] text-sm px-5 py-2 xl:text-base font-semibold rounded-full xl:px-7 xl:py-3 cursor-pointer">
                   Learn More
                 </button>
     </div>

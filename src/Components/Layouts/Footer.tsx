@@ -7,12 +7,12 @@ export default function Footer() {
   return (
     <footer className="bg-[#0B2744] rounded-t-[32px] m-2.5">
         <div className="max-w-[1440px] mx-auto relative px-4 md:px-6 lg:px-12 xl:px-[45px] pt-[50px]">
-      <div className="rounded-[32px] overflow-hidden">
+      <div className=" overflow-hidden">
 
         {/* CTA Section */}
 
 
-        <div className="relative overflow-hidden px-[38px] py-[45px] bg-white/5 backdrop-blur-sm shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
+        <div className="rounded-[32px] relative overflow-hidden px-4 xl:px-[38px] py-[45px] bg-white/5 backdrop-blur-sm shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
 
             {/* Watermark Logo */}
 
@@ -23,22 +23,22 @@ export default function Footer() {
             />
 
             <div className="relative z-10">
-              <h2 className="font-heading text-white text-4xl md:text-5xl lg:text-[64px] leading-[1.05]">
+              <h2 className="font-heading text-white text-2xl md:text-5xl lg:text-[64px] leading-snug">
                 Bring Your Site
-                <br />
+                <br className="hidden md:block"/>
                 Online Faster.
               </h2>
 
               <p className="mt-6 text-white text-sm md:text-lg">
-                Tell us about your site, load profile, land constraints, timeline, and deployment <br/> goals. We will help identify whether Eagle, Hawk, Sparrow, or a Power + Water <br/> configuration is the right fit.
+                Tell us about your site, load profile, land constraints, timeline, and deployment <br className="hidden md:block"/> goals. We will help identify whether Eagle, Hawk, Sparrow, or a Power + Water <br className="hidden md:block"/> configuration is the right fit.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-4">
-                <button className="rounded-full bg-[#F5A623] px-7 py-4 text-sm font-semibold text-black cursor-pointer">
+              <div className="mt-8 flex flex-wrap gap-2 md:gap-4">
+                <button className="rounded-full bg-[#F5A623] px-5 xl:px-7 py-3 xl:py-4 text-xs md:text-sm font-semibold text-black cursor-pointer hover:bg-transparent hover:border hover:border-[#F5A623] hover:text-[#F5A623] ">
                   Request a Deployment Consultation
                 </button>
 
-                <button className="rounded-full border border-white px-7 py-4 text-sm font-semibold text-white backdrop-blur-xl cursor-pointer">
+                <button className="rounded-full border border-white px-5 xl:px-7 py-3 xl:py-4 text-xs md:text-sm font-semibold text-white backdrop-blur-xl cursor-pointer border-flow overflow-hidden">
                   Download Platform Overview
                 </button>
               </div>
@@ -47,8 +47,8 @@ export default function Footer() {
 
         {/* Footer Menu */}
 
-        <div className="px-[50px] py-[50px]">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+        <div className="px-4 xl:px-[50px] py-[50px]">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
 
             <FooterColumn
               title="Company"
@@ -142,7 +142,7 @@ export default function Footer() {
       </div>
       <div className="bg-[#002E68]">
           <div className="max-w-[1440px] mx-auto relative px-4 md:px-10 py-6">
-            <h1 className="font-heading text-center text-white text-[48px] md:text-[80px] xl:text-[88px] border-b-6 border-white  leading-none whitespace-nowrap overflow-hidden">
+            <h1 className="font-heading text-center text-white text-[21px] sm:text-[40px] lg:text-6xl  xl:text-[88px] border-b-2 lg:border-b-6 border-white  leading-none whitespace-nowrap overflow-hidden">
               Winged Solar Solutions
             </h1>
             <p className="text-white text-xs text-center md:text-base mt-4">
@@ -193,7 +193,7 @@ function SocialIcon({
   children: React.ReactNode;
 }) {
   return (
-    <button className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-white cursor-pointer">
+    <button className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-white cursor-pointer hover:scale-110 transition-transform duration-300">
       {children}
     </button>
   );

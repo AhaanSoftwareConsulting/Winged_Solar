@@ -38,14 +38,14 @@ export default function Services({
 
   return (
     <div className="bg-[#f6f6f6]">
-        <div className="max-w-[1440px] mx-auto relative px-4  md:px-6 lg:px-12 xl:px-[60px] py-[90px]">
+        <div className="max-w-[1440px] mx-auto relative px-4  md:px-6 lg:px-10 xl:px-[60px] py-16 xl:py-[90px]">
         <div className="relative justify-center items-center ">
-            <h1 className="text-3xl md:text-4xl text-[#0B2744] leading-snug text-center font-heading">
-              Proven Deployments<br/>
+            <h1 className="text-2xl xl:text-4xl text-[#0B2744] leading-snug text-center font-heading">
+              Proven Deployments<br className="hidden sm:block"/>
 Across Critical Industries
 
             </h1>
-            <p className="text-[#1a1f24] leading-snug text-base text-center mt-4 ">
+            <p className="text-[#1a1f24] leading-snug text-xs md:text-base text-center mt-4 ">
               From commercial facilities and telecom networks to remote infrastructure and emergency response applications, <br/> Winged Solar solutions are engineered for rapid deployment and long-term performance.
             </p>
         </div>
@@ -127,7 +127,7 @@ Across Critical Industries
 
          
            <div className="flex justify-center mt-10">
-  <button className="bg-[#F5A623] text-black font-semibold rounded-full px-7 py-5 cursor-pointer">
+  <button className="bg-[#F5A623] text-black font-semibold rounded-full px-7 py-3 xl:py-5 cursor-pointer hover:bg-transparent hover:border hover:border-[#F5A623] hover:text-[#F5A623]">
     View All Services
   </button>
   </div>

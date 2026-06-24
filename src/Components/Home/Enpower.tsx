@@ -30,8 +30,8 @@ export default function Enpower() {
 
     return (
         <section className="bg-[#F6F6F6] py-[90px]">
-            <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 xl:px-[60px]">
-                <div className="grid lg:grid-cols-2 gap-5 items-center">
+            <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-10 xl:px-[60px]">
+                <div className="grid lg:grid-cols-2 gap-2 lg:gap-5 items-center">
 
                     {/* Left Side */}
 
@@ -41,43 +41,54 @@ export default function Enpower() {
                             <img
                                 src={quality}
                                 alt="EnPower Star"
-                                className="rounded-[20px] w-full max-w-[424px]"
+                                className="rounded-[20px] w-fit"
                             />
 
-                            {labels.map((label, index) => (
-                                <div
-                                    key={index}
-                                    className={`absolute ${label.className}
-                  bg-[#EADFD4] text-[#1A1F24]
-                  p-5
-                  rounded-lg
-                  shadow-sm
-                  whitespace-nowrap`}
-                                >
-                                    <p className="text-[#1A1F24] text-base font-medium">
-                                        {label.text}
-                                    </p>
-                                </div>
-                            ))}
+                            <div className="hidden sm:block">
+  {labels.map((label, index) => (
+    <div
+      key={index}
+      className={`absolute ${label.className}
+      bg-[#EADFD4] text-[#1A1F24]
+      p-2 lg:p-5 rounded-lg shadow-sm whitespace-nowrap`}
+    >
+      <p className="text-sm xl:text-base font-medium">
+        {label.text}
+      </p>
+    </div>
+  ))}
+</div>
+<div className="flex sm:hidden flex-wrap justify-center gap-3 mt-6  ">
+  {labels.map((label, index) => (
+    <div
+      key={index}
+      className="bg-[#EADFD4] text-[#1A1F24] px-4 py-2 rounded-lg "
+    >
+      <p className="text-sm font-medium">
+        {label.text}
+      </p>
+    </div>
+  ))}
+</div>
                         </div>
                     </div>
 
                     {/* Right Side */}
 
                     <div>
-                        <h2 className="font-heading text-[#01122E] text-2xl  md:text-[35px] leading-tight">
+                        <h2 className="font-heading text-[#01122E] text-xl  xl:text-[35px] leading-tight">
                             Brought to you by
                         </h2>
 
-                        <h3 className="font-heading text-[#EA8D23] text-3xl  md:text-[55px] mt-1">
+                        <h3 className="font-heading text-[#EA8D23] text-2xl  xl:text-[55px] mt-1">
                             EnPower Star.
                         </h3>
 
-                        <p className="mt-6 text-[#1A1F24] text-base">
+                        <p className="mt-6 text-[#1A1F24] text-sm xl:text-base">
                             Winged Solar is backed by renewable-energy project experience from EnPower<br /> Star, including solar, battery storage, EV charging, design, installation, permitting,<br /> and project execution.
                         </p>
 
-                        <button className="mt-8 bg-[#F5A623] text-black font-semibold rounded-full px-7 py-5 cursor-pointer">
+                        <button className="mt-8 bg-[#F5A623] text-black font-semibold rounded-full px-7 py-3 xl:py-5 cursor-pointer hover:bg-transparent hover:border hover:border-[#F5A623] hover:text-[#F5A623]">
                             Explore Our Platforms
                         </button>
                     </div>

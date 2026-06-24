@@ -16,7 +16,7 @@ export default function Advantages({
 }: AdvantagesProps) {
   return (
     <section className="bg-[#F6F6F6]">
-      <div className="max-w-[1440px] mx-auto relative px-4 md:px-6 lg:px-12 xl:px-[60px] py-[90px]">
+      <div className="max-w-[1440px] mx-auto relative px-4 md:px-6 lg:px-10 xl:px-[60px] py-16 xl:py-[90px]">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
          
           {/* Left Image */}
@@ -24,17 +24,17 @@ export default function Advantages({
             <img
               src={image}
               alt={title}
-              className="w-full h-full object-cover rounded-[20px]"
+              className="w-full h-auto object-cover rounded-[20px]"
             />
           </div>
 
           {/* Right Content */}
           <div>
-            <h2 className="text-[#0A2A52] text-3xl md:text-[35px] leading-snug font-heading">
+            <h2 className="text-[#0A2A52] text-xl md:text-2xl xl:text-[35px] leading-snug font-heading">
               {title}
             </h2>
 
-            <p className="mt-6 text-[#404040] text-base  leading-8 max-w-[650px]">
+            <p className="mt-6 text-[#404040] text-sm lg:text-base  leading-snug max-w-[650px]">
               {description}
             </p>
 
@@ -46,14 +46,14 @@ export default function Advantages({
                 >
                   <span className="min-w-[16px] h-[16px] rounded-full bg-[#24A0D5] mt-1" />
 
-                  <p className="text-[#172033] text-lg font-medium leading-relaxed">
+                  <p className="text-[#172033] text-sm xl:text-lg font-medium leading-relaxed">
                     {item}
                   </p>
                 </div>
               ))}
             </div>
 
-            <button className="mt-10 bg-[#F5A623] text-black font-semibold rounded-full px-7 py-5 cursor-pointer">
+            <button className="mt-10 bg-[#F5A623] text-black font-semibold rounded-full px-7 py-3 xl:py-5 cursor-pointer hover:bg-transparent hover:border hover:border-[#F5A623] hover:text-[#F5A623]">
                   Explore EPC Advantages
                 </button>
           </div>
