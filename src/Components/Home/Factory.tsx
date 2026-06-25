@@ -22,24 +22,24 @@ export default function Factory() {
 ];
   return (
     <div className="bg-[#F6F6F6]">
-        <div className="max-w-[1440px] mx-auto relative px-4  md:px-6 lg:px-12 xl:px-[60px] py-[90px]">
+        <div className="max-w-[1440px] mx-auto relative px-4  md:px-6 lg:px-12 xl:px-[60px] py-16 xl:py-[90px]">
         <div className="relative justify-center items-center ">
-            <h1 className="text-xl md:text-3xl lg:text-4xl text-[#0B2744] leading-snug text-center font-heading ">
+            <h1 className="text-xl sm:text-2xl lg:text-4xl text-[#0B2744] leading-snug text-center font-heading ">
              Factory-built solar infrastructure. <br className="hidden lg:block"/>Deployed like equipment.
             </h1>
             <p className="text-[#1a1f24] leading-snug text-xs lg:text-base text-center mt-4 ">
-              Winged Solar shifts repeatable structure work out of the field and into a controlled manufacturing environment. Instead <br className="hidden lg:block"/> of building every project from scratch on-site, the system arrives as a pre-engineered platform that can be placed, deployed, <br/> connected, monitored, and expanded.
+              Winged Solar shifts repeatable structure work out of the field and into a controlled manufacturing environment. Instead <br className="hidden lg:block"/> of building every project from scratch on-site, the system arrives as a pre-engineered platform that can be placed, deployed, <br className="hidden lg:block"/> connected, monitored, and expanded.
             </p>
         </div>
 
-          <div  className="grid grid-cols-1 xl:grid-cols-3 gap-6 mt-10">
+          <div  className="grid grid-cols-1 sm:grid-cols-12  gap-4 lg:gap-6 mt-10">
             {/* Bottom Features */}
-          <div className="relative rounded-[20px] ">
-            <img src={grid1} alt="" className="w-full h-auto object-cover" />
+          <div className="relative rounded-[20px] sm:col-span-3 xl:col-span-4">
+            <img src={grid1} alt="" className="w-full h-full object-cover" />
           </div>
 
           {/* Bottom Features */}
-          <div className="grid grid-cols-1 border border-[#24A0D580] gap-4 p-5 rounded-[20px] ">
+          <div className="grid grid-cols-1 border border-[#24A0D580] gap-2 lg:gap-4 lg:p-5 p-3 rounded-[20px] sm:col-span-6 xl:col-span-4">
             <BottomCard
               icon={in1}
               title="Factory-built repeatability"
@@ -71,16 +71,16 @@ export default function Factory() {
           </div>
 
           {/* Bottom Features */}
-          <div className="relative rounded-[20px] ">
-            <img src={grid2} alt="" className="w-full h-auto object-cover" />
+          <div className="relative rounded-[20px] sm:col-span-3 xl:col-span-4">
+            <img src={grid2} alt="" className="w-full h-full object-cover" />
           </div>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-1 lg:gap-6 mt-12">
   {steps.map((step, index) => (
     <React.Fragment key={index}>
-      <div className="flex items-center gap-4">
-        <div className="bg-[#E9F3FF] rounded-full w-[50px] h-[50px] xl:w-[103px] xl:h-[103px] shrink-0 flex items-center justify-center animate-float">
+      <div className="flex items-center gap-2 lg:gap-4">
+        <div className="bg-[#E9F3FF] rounded-full w-16 h-16 xl:w-[103px] xl:h-[103px] shrink-0 flex items-center justify-center animate-float">
           <img
             src={step.icon}
             alt={step.title}
@@ -88,7 +88,7 @@ export default function Factory() {
           />
         </div>
 
-        <p className="text-lg lg:text-3xl text-[#003374] font-heading">
+        <p className="text-base lg:text-3xl text-[#003374] font-heading">
           {step.title}
         </p>
       </div>

@@ -10,7 +10,7 @@ export default function Features() {
     <div className="max-w-[1440px] mx-auto relative">
         <div className="relative px-4  md:px-6 lg:px-10 xl:px-[60px] py-16 xl:py-[90px]">
         <div className="relative justify-center items-center ">
-            <h1 className="text-xl md:text-2xl lg:text-4xl text-[#0B2744] leading-snug text-center font-heading animate-delay">
+            <h1 className="text-xl sm:text-2xl lg:text-4xl text-[#0B2744] leading-snug text-center font-heading">
               Traditional solar takes too much land, <br className="hidden lg:block"/> too much field labor, and too much time.
             </h1>
             <p className="text-[#1a1f24] leading-snug text-xs lg:text-base text-center mt-4 ">

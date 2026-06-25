@@ -30,12 +30,12 @@ export default function Hero() {
                 DEPLOYABLE SOLAR INFRASTRUCTURE
               </div>
 
-              <h1 className="mt-6 text-white font-bold leading-tight text-[28px] md:text-[40px]  font-heading animate-reveal">
-                Deployable Solar <br className="hidden md:block"/> Infrastructure for C&I, <br className="hidden md:block"/> EPCs, and Critical Power
+              <h1 className="mt-6 text-white font-bold leading-tight text-xl sm:text-3xl lg:text-[40px]  font-heading animate-reveal">
+                Deployable Solar <br/> Infrastructure for C&I, <br/> EPCs, and Critical Power
               </h1>
 
-              <p className="mt-6  text-gray-300 leading-relaxed text-sm md:text-lg ">
-               Winged Solar™ delivers factory-built solar, storage, and power + water platforms that deploy faster, use less land, reduce field construction, and create new options for commercial, industrial, public works, and remote infrastructure projects.
+              <p className="mt-6  text-gray-300 leading-relaxed text-xs sm:text-md lg:text-lg ">
+               Winged Solar™ delivers factory-built solar, storage, and power + water <br className="hidden sm:block"/> platforms that deploy faster, use less land, reduce field construction, and <br className="hidden sm:block"/> create new options for commercial, industrial, public works, and remote <br className="hidden sm:block"/> infrastructure projects.
 
               </p>
             </div>

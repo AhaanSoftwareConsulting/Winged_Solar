@@ -29,7 +29,7 @@ export default function Enpower() {
     ];
 
     return (
-        <section className="bg-[#F6F6F6] py-[90px]">
+        <section className="bg-[#F6F6F6] py-16 xl:py-[90px]">
             <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-10 xl:px-[60px]">
                 <div className="grid lg:grid-cols-2 gap-2 lg:gap-5 items-center">
 

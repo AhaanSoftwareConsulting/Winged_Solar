@@ -6,7 +6,7 @@ import insta from "../../assets/insta.png";
 export default function Footer() {
   return (
     <footer className="bg-[#0B2744] rounded-t-[32px] m-2.5">
-        <div className="max-w-[1440px] mx-auto relative px-4 md:px-6 lg:px-12 xl:px-[45px] pt-[50px]">
+        <div className="max-w-[1440px] mx-auto relative px-4 md:px-6 lg:px-10 xl:px-[45px] pt-[50px]">
       <div className=" overflow-hidden">
 
         {/* CTA Section */}
@@ -47,8 +47,8 @@ export default function Footer() {
 
         {/* Footer Menu */}
 
-        <div className="px-4 xl:px-[50px] py-[50px]">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
+        <div className="xl:px-2.5 pt-[50px] pb-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 xl:gap-[200px]">
 
             <FooterColumn
               title="Company"
@@ -80,17 +80,17 @@ export default function Footer() {
             />
 
             <div>
-              <h4 className="text-white text-xl mb-3">
+              <h4 className="text-white text-2xl mb-3 ">
                 Legal Links
               </h4>
 
-              <div className="w-full h-px bg-white/20 mb-4" />
+               <div className="w-1/4 lg:w-full h-[2px] bg-white/20 mb-4" /> 
 
-              <ul className="space-y-3">
+              <ul className="space-y-7">
                 <li>
                   <a
                     href="#"
-                    className="text-white/80 text-sm"
+                    className="text-white text-base"
                   >
                     Privacy Policy
                   </a>
@@ -99,20 +99,20 @@ export default function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-white/80 text-sm"
+                    className="text-white text-base"
                   >
                     Terms & Conditions
                   </a>
                 </li>
               </ul>
 
-              <h4 className="text-white text-xl mt-8 mb-3">
+              <h4 className="text-white text-2xl mt-8 mb-3">
                 Social Links
               </h4>
 
-              <div className="w-full h-px bg-white/20 mb-4" />
+              <div className="w-1/4 lg:w-full h-[2px] bg-white mb-4" />
 
-              <div className="flex gap-3">
+              <div className="flex gap-2">
                 <SocialIcon>
                 <img src={fb} alt="Facebook" />
                 </SocialIcon>
@@ -141,8 +141,8 @@ export default function Footer() {
       </div>
       </div>
       <div className="bg-[#002E68]">
-          <div className="max-w-[1440px] mx-auto relative px-4 md:px-10 py-6">
-            <h1 className="font-heading text-center text-white text-[21px] sm:text-[40px] lg:text-6xl  xl:text-[88px] border-b-2 lg:border-b-6 border-white  leading-none whitespace-nowrap overflow-hidden">
+          <div className="max-w-[1440px] mx-auto relative py-6">
+            <h1 className="font-heading text-center text-white text-2xl sm:text-[42px] md:text-[50px] lg:text-[66px] xl:text-[94px] border-b-2 lg:border-b-6 border-white  leading-none whitespace-nowrap overflow-hidden">
               Winged Solar Solutions
             </h1>
             <p className="text-white text-xs text-center md:text-base mt-4">
@@ -165,18 +165,18 @@ function FooterColumn({
 }: FooterColumnProps) {
   return (
     <div>
-      <h4 className="text-white text-xl mb-3">
+      <h4 className="text-white text-2xl mb-3">
         {title}
       </h4>
 
-      <div className="w-full h-px bg-white/20 mb-4" />
+      <div className="w-1/4 lg:w-full h-[2px] bg-white/20 mb-4" />
 
-      <ul className="space-y-3">
+      <ul className="space-y-7">
         {links.map((link) => (
           <li key={link}>
             <a
               href="#"
-              className="text-white/80 text-sm hover:text-white transition"
+              className="text-white text-base hover:text-white transition"
             >
               {link}
             </a>
@@ -193,7 +193,7 @@ function SocialIcon({
   children: React.ReactNode;
 }) {
   return (
-    <button className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-white cursor-pointer hover:scale-110 transition-transform duration-300">
+    <button className="w-8 h-8 rounded-full bg-[#003374] border border-white/30 flex items-center justify-center text-white cursor-pointer hover:scale-110 transition-transform duration-300">
       {children}
     </button>
   );

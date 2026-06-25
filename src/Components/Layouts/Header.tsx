@@ -48,9 +48,7 @@ export default function Header() {
         <a className="text-white text-xs xl:text-base">About</a>
         <a className="text-white text-xs xl:text-base">C&I Solar</a>
         <a className="text-white text-xs xl:text-base">EPC Advantages</a>
-        <a className="text-white text-xs xl:text-base">
-          Critical Infrastructure
-        </a>
+        <a className="text-white text-xs xl:text-base">Critical Infrastructure</a>
       </nav>
     </div>
 

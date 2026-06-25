@@ -17,20 +17,20 @@ export default function Advantages({
   return (
     <section className="bg-[#F6F6F6]">
       <div className="max-w-[1440px] mx-auto relative px-4 md:px-6 lg:px-10 xl:px-[60px] py-16 xl:py-[90px]">
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
+        <div className="grid sm:grid-cols-12 gap-10 items-center">
          
           {/* Left Image */}
-          <div>
+          <div className="relative rounded-[20px] w-full h-1/2 lg:h-full sm:col-span-5 lg:col-span-6">
             <img
               src={image}
               alt={title}
-              className="w-full h-auto object-cover rounded-[20px]"
+              className="w-full h-full object-cover "
             />
           </div>
 
           {/* Right Content */}
-          <div>
-            <h2 className="text-[#0A2A52] text-xl md:text-2xl xl:text-[35px] leading-snug font-heading">
+          <div className="relative sm:col-span-7 lg:col-span-6">
+            <h2 className="text-[#0A2A52] text-xl lg:text-2xl xl:text-[35px] leading-snug font-heading">
               {title}
             </h2>
 
@@ -46,7 +46,7 @@ export default function Advantages({
                 >
                   <span className="min-w-[16px] h-[16px] rounded-full bg-[#24A0D5] mt-1" />
 
-                  <p className="text-[#172033] text-sm xl:text-lg font-medium leading-relaxed">
+                  <p className="text-[#172033] text-xs xl:text-lg font-medium leading-relaxed">
                     {item}
                   </p>
                 </div>
