@@ -20,7 +20,7 @@ export default function Advantages({
         <div className="grid sm:grid-cols-12 gap-10 items-center">
          
           {/* Left Image */}
-          <div className="relative rounded-[20px] w-full h-1/2 lg:h-full sm:col-span-5 lg:col-span-6">
+          <div className="relative rounded-[20px] w-full h-full sm:h-1/2 lg:h-full sm:col-span-5 lg:col-span-6">
             <img
               src={image}
               alt={title}
